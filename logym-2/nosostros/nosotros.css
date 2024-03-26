@@ -1,0 +1,216 @@
+/*header*/
+
+header .navbar .navbar-brand img {
+    width: 180px;
+}
+
+
+header {
+    color: black;
+    background-color: #FFFFFF;
+    margin: 30px 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 3px 3px 10px #FFFFFF;
+    border-radius: 10px;
+
+    font-weight: 200;
+    font-size: 20px;
+}
+
+header ul a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header ul a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+header ul a:hover::after {
+    background-color: black;
+}
+
+/*Main*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+.titulo {
+    font-weight: 900;
+    font-size: 250%;
+    
+}
+
+main div .span {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 200%;
+}
+
+.texto {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 70px;
+}
+
+.boton {
+    background-color: #FFFFFF;
+    color: black;
+    margin: 40px;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 5px #000;
+    border-radius: 20px;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.boton:hover {
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.boton .app {
+    text-decoration: none;
+    color: black;
+}
+
+/*section*/
+
+section img{
+    width: 30%;
+    margin: 9%;
+    box-shadow: 5px 5px 20px #FFFFFF;
+    border-radius: 10px;
+}
+
+/*footer*/
+footer a .google{
+    width: 40%;
+    
+}
+
+footer {
+    color: white;
+    background-color: black;
+    margin: 30px 60px;
+    padding: 10px 140px 10px 140px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    border-radius: 10px;
+
+    font-weight: 200;
+    font-size: 20px;
+}
+footer .logym{
+    width: 130px;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 500px) {
+
+    /*Header*/
+
+    header ul a li {
+        display: none;
+    }
+
+    header {
+        background-color: white;
+        box-shadow: none;
+        margin: 30px;
+    }
+
+    .logo {
+        width: 70px;
+        border-radius: 10px;
+    }
+
+    /*main*/
+    .titulo  {
+        gap: 100px;
+        .span{
+            font-size: 20px;
+            font-weight: 0;
+        }
+    }
+
+    .img-2{
+        display: none;
+    }
+
+    .contenedor-img {
+        display: flex;
+        justify-content: center;
+        img{
+            width: 60%;
+        }
+    }
+
+    /*footer*/
+
+    .google {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 959px) {
+    .google {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,182 @@
+/*header*/
+
+header .navbar .navbar-brand img {
+    width: 180px;
+}
+
+header {
+    color: black;
+    background-color: #FFFFFF;
+    margin: 30px 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 3px 3px 10px #FFFFFF;
+    border-radius: 10px;
+
+    font-weight: 200;
+    font-size: 20px;
+}
+
+header ul a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header ul a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+header ul a:hover::after {
+    background-color: black;
+}
+
+/*main*/
+
+main {
+    display: inline-block;
+}
+
+h1 {
+    margin: 60px;
+    padding-top: 50px;
+    font-weight: 900;
+}
+
+span {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.texto {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 70px;
+    width: 600px;
+}
+
+.sub-uno {
+    margin: 60px;
+    font-weight: 900;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+.sub-dos {
+    margin: 60px;
+    font-weight: 900;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.horarios {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 150px;
+}
+
+
+h3 {
+    margin: 1px 60px ;
+    font-weight: 900;
+    display: block;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.numero {
+    margin-top: 1px ;
+    display: flex;
+    align-items: center;
+}
+
+.numero img {
+    width: 50px;
+    margin: 1px 60px;
+    margin-right: 1px;
+}
+
+.numero p {
+    margin: 1px 60px;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+/*carrusel*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+
+.carousel-inner {
+    background-color: black;
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px; 
+    height: 30px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
+}
+
+/*footer*/
+footer {
+    color: white;
+    background-color: black;
+    margin: 30px 60px;
+    padding: 10px 140px 10px 140px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    border-radius: 10px;
+
+    font-weight: 200;
+    font-size: 20px;
+}
+.logym{
+    width: 130px;
+    border-radius: 100px;
+}

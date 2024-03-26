@@ -1,0 +1,252 @@
+/*header*/
+
+header .navbar .navbar-brand img {
+    width: 180px;
+}
+
+header {
+    color: black;
+    background-color: #FFFFFF;
+    margin: 30px 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 3px 3px 10px #FFFFFF;
+    border-radius: 10px;
+
+    font-weight: 200;
+    font-size: 20px;
+
+
+}
+
+header ul a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header ul a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+header ul a:hover::after {
+    background-color: black;
+}
+
+
+
+/*Estilos de Main*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 140px 10px 90px;
+}
+
+main .textos h1 {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+
+.img img {
+    width: 80%;
+    margin: 100px;
+    box-shadow: 5px 5px 20px #FFFFFF;
+    border-radius: 10px;
+
+}
+
+main .textos {
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 100px;
+}
+
+main .textos h1 {
+    margin: 40px 0px;
+
+    box-shadow: 1px 1px 10px white;
+    width: 200px;
+    margin: 30px;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+main .textos .boton {
+    background-color: #10A60F;
+    color: black;
+    margin: 40px;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 5px #10A60F;
+    border-radius: 10px;
+    font-weight: 550;
+}
+
+main .boton:hover {
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+
+/*Footer*/
+
+footer {
+    color: white;
+    background-color: black;
+    margin: 30px 60px;
+    padding: 10px 140px 10px 140px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    border-radius: 10px;
+
+    font-weight: 200;
+    font-size: 20px;
+}
+
+footer img {
+    width: 130px;
+    border-radius: 100px;
+}
+
+
+/* Media QR*/
+
+/* Media QR Celular*/
+
+@media screen and (max-width: 500px) {
+
+    /*Header*/
+
+    header ul a li {
+        display: none;
+    }
+
+    header {
+        background-color: white;
+        box-shadow: none;
+        margin: 30px;
+    }
+
+    .logo {
+        width: 70px;
+        border-radius: 10px;
+    }
+
+    /*Main*/
+
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        margin: 80px;
+        padding: 1% 0px;
+    }
+
+    div.textos {
+        margin-top: 1px;
+    }
+
+    .img {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        width: 400px;
+        padding: 1% 0px;
+        margin-bottom: 0px;
+    }
+
+    /*footer*/
+
+    footer {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    /*Section - Cajas*/
+
+    .cajas {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        padding: 1% 0px;
+        gap: 70px;
+        margin: 70px;
+        margin-top: 1px;
+        background: none;
+    }
+}
+
+/*MQ tablet*/
+
+@media screen and (min-width: 501px) and (max-width: 959px) {
+
+    /*Header*/
+
+    header ul a li {
+        display: none;
+    }
+
+    header {
+        background-color: white;
+        box-shadow: none;
+        margin: 30px;
+    }
+
+    .logo {
+        width: 150px;
+        border-radius: 10px;
+    }
+    main .img {
+        padding: 0px;
+        justify-content: center;
+        img{
+            margin: 50px;
+            width: 130%;
+        }
+    }
+}
